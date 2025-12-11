@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using MoleculeLookup.Core.Interfaces;
 using MoleculeLookup.Core.Models;
 
