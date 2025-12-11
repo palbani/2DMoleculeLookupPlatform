@@ -289,7 +289,7 @@ public class MoleculeSearchService
     {
         var command = new DeleteFromHistoryCommand(_historyRepository, entryId);
         await _commandInvoker.ExecuteAsync(command, cancellationToken);
-        return command.Result ?? false;
+        return command.Result;
     }
 
     /// <summary>

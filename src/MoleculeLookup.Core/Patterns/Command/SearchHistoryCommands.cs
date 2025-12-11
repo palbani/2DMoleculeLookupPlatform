@@ -53,7 +53,7 @@ public class DeleteFromHistoryCommand : ISearchCommand<bool>
     public string Description => $"Delete history entry {_entryId}";
     public DateTime CreatedAt { get; } = DateTime.UtcNow;
     public bool CanUndo => _deletedEntry != null;
-    public bool? Result => _wasDeleted;
+    public bool Result => _wasDeleted;
 
     public DeleteFromHistoryCommand(ISearchHistoryRepository repository, Guid entryId)
     {
@@ -218,7 +218,7 @@ public class ClearHistoryCommand : ISearchCommand<int>
     public string Description => "Clear all search history";
     public DateTime CreatedAt { get; } = DateTime.UtcNow;
     public bool CanUndo => _clearedEntries != null && _clearedEntries.Count > 0;
-    public int? Result => _clearedCount;
+    public int Result => _clearedCount;
 
     public ClearHistoryCommand(ISearchHistoryRepository repository)
     {
