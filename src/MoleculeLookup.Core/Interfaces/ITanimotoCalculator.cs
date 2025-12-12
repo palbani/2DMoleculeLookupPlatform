@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using MoleculeLookup.Core.Models;
 
 namespace MoleculeLookup.Core.Interfaces;
